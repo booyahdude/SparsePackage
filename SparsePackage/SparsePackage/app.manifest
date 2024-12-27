@@ -2,6 +2,12 @@
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
   <assemblyIdentity version="1.0.0.0" name="SparsePackage.app"/>
 
+  <msix xmlns="urn:schemas-microsoft-com:msix.v1"
+          publisher="CN=booyahdude"
+          packageName="8eb046fa-1798-4a03-a7e7-b7da4a2c576c"
+          applicationId="App"
+        />
+
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- The ID below informs the system that this application is compatible with OS features first introduced in Windows 10. 
