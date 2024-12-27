@@ -78,7 +78,9 @@
 
     <Message Text='Executing makeappx.exe pack /d "$(MSBuildProjectDirectory)" /p "$(MSBuildProjectDirectory)\bin\$(MSBuildProjectName).msix" /nv /o' Importance="high"/>
     <Exec Command='"$(MakeAppxExeFullPath)" pack /d "$(MSBuildProjectDirectory)" /p "$(MSBuildProjectDirectory)\bin\$(MSBuildProjectName).msix" /nv /o' />
-
+    
+    <!-- Add signing step here if desired -->
+    
     <Message Text="Cleaning up appxmanifest.xml" Importance="high" />
     <Delete Files="$(MSBuildProjectDirectory)\appxmanifest.xml" />
   </Target>
